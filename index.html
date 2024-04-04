@@ -1,0 +1,412 @@
+<!DOCTYPE html>
+<html lang="en">
+<!--This whole html is about introducing myself.-->
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Introduction about the author"/>
+	<meta name="keywords" content="HTML, introduction, author"/>
+	<meta name="author" content="Joshua D. Talaid"/>
+    <title>Meet Joshua D. Talaid</title>
+
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-color: #f8f8f8;
+            color: #333;
+            margin: 50px;
+            padding: 0;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            min-height: 100vh;
+            background-image: url(images/background.gif);
+            background-repeat: no-repeat;
+            background-size: cover;
+        }
+
+        header{
+            background-color: #333;
+            color: #fff;
+            padding: 20px; 
+            text-align: center;
+            width: 100%;
+            box-sizing: border-box; 
+            background-image: url(images/header.gif);
+            background-repeat: no-repeat;
+            background-size: cover;
+        }
+        footer {
+            background-color: #333;
+            color: #fff;
+            padding: 20px; 
+            text-align: center;
+            width: 100%;
+            box-sizing: border-box; 
+            background-image: url(images/header.gif);
+            background-repeat: no-repeat;
+            background-size: cover;
+        }
+
+        nav {
+            display: flex;
+            justify-content: center;
+            background-color: #00039c;
+            padding: 10px;
+            width: 100%;
+        }
+
+        nav a {
+            color: #fff;
+            text-decoration: none;
+            margin: 0 15px;
+            font-weight: bold;
+        }
+
+        section {
+            max-width: 800px;
+            margin: 20px;
+            padding: 30px;
+            background-color: #fff;
+            border-radius: 15px;
+            box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+        }
+
+        h1 {
+            color: #f8f8f8;
+            margin-bottom: 10px;
+        }
+
+        img {
+            border-radius: 50%;
+            max-width: 100%;
+            height: auto;
+            margin-bottom: 20px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+        }
+
+        article {
+            margin-bottom: 20px;
+        }
+
+        p {
+            line-height: 1.6;
+            margin-bottom: 15px;
+        }
+
+        h2 {
+            color: #4285f4;
+            margin-bottom: 10px;
+        }
+
+        ul {
+            list-style-type: none;
+            padding: 0;
+            margin: 0;
+        }
+
+        li {
+            margin-bottom: 10px;
+        }
+
+        a {
+            color: #4285f4;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        a:hover {
+            text-decoration: underline;
+        }
+
+        table {
+            border-collapse: collapse;
+            width: 80%;
+            margin: 20px auto;
+        }
+
+        th, td {
+            border: 1px solid #333;
+            padding: 10px;
+            text-align: left;
+        }
+
+        th {
+            background-color: #f2f2f2;
+        }
+        .images, .videos, .audio, .objects {
+            display: none;
+        }
+
+        /* CSS for navigation buttons */
+        .nav-btns {
+            margin-bottom: 20px;
+			text-decoration: none;
+			color: #333;
+			font-weight: bold;
+			border: 10px;
+        }
+
+        .nav-btns button {
+			text-decoration: none;
+			background-color: #fff;
+			color: #333;
+			font-weight: bold;
+			border: 1px solid transparent; 
+			padding: 10px 20px;
+			margin: 0 10px; 
+			border-radius: 20px; 
+			cursor: pointer; 
+			transition: background-color 0.3s, border-color 0.3s, color 0.3s; 
+        }
+		.nav-btns button:hover {
+			background: linear-gradient(to right, #3d3a40, #57555d); 
+			border-color: #333; 
+			color: #fff; 
+		}
+
+        .gallery figure {
+            margin: 0;
+            padding: 0;
+            border: 2px solid #ccc;
+            border-radius: 10px;
+            overflow: hidden;
+            position: relative;
+            width: 780px;
+            max-width: 100%;
+        }
+		.gallery figure audio{
+			width: 100%;
+		}
+        .gallery figure img,
+        .gallery figure video,
+        .gallery figure object {
+            width: 100%;
+            height: auto;
+            display: block;
+        }
+
+        .gallery figcaption {
+            text-align: center;
+            margin-top: -20px;
+            padding: 5px;
+            background-color: rgba(255, 255, 255, 0.8);
+            position: absolute;
+			bottom:0;
+            left: 0;
+            right: 0;
+        }
+
+    </style>
+</head>
+
+<header>
+    <h1>Hello, I'm Joshua D. Talaid</h1><hr>
+    <p>Welcome to my digital realm!</p>
+</header>
+
+<nav>
+    <a href="#home">Home</a>
+    <a href="#about">About</a>
+    <a href="#personal-info">Personal Info</a>
+    <a href="#gallery">Gallery</a>
+    <a href="#contacts">Contacts</a>
+    <a href="#more">More</a>
+</nav>
+
+<body>
+    
+    <section>
+        <img src="images\Profile.jpg" alt="Profile Picture">
+        <main id = "about">
+        <aside>
+            <h2>About Me</h2><hr>
+        <p>
+            Greetings! I'm an enthusiastic <abbr title="BSCpE"><strong>Bachelor of Science in Computer Engineering Student</strong></abbr> with a flair for creative endeavors. My
+            journey involves weaving digital experiences and exploring the endless possibilities of technology. I watched <cite>Iron Man</cite> which also 
+            made me interested in technology.
+        </p>
+        <blockquote>"Life is not about waiting for the <em>storm</em> to pass,<br>but about learning to dance in the rain<br> while striving for <i>success.</i>"</blockquote>
+        <pre><mark><b>Feel free to look through my work and get in touch!</b></mark></pre>
+        </aside>
+        <section>
+            <h2>Skills & Expertise</h2>
+            <ul>
+                <li><q>Web Development</q></li>
+                <li><q>Robotics</q></li>
+                <li><q>Hardware</q></li>
+            </ul>
+        </section>
+        </main>
+        <code>System.out.println("I hope you have a wonderfull day!");</code><br>
+    </section>
+
+    <section>
+        <article id = "personal-info">
+            <h2><caption>Personal Details</h2></caption><hr>
+        <table>
+            <caption>Some Details About Me</caption>
+            <colgroup>
+                <col style="width: 200px;">
+                <col style="width: 600px;">
+            </colgroup>
+            <thead>
+                <tr>
+                    <th>Categories</th>
+                    <th>Descriptions</th>
+                </tr>
+            </thead>
+            <tbody>
+            <tr>
+                <td>Name:</td>
+                <td>Joshua D. Talaid</td>
+            </tr>
+            <tr>
+                <td>Birthdate:</td>
+                <td>November 27 2004</td>
+            </tr>
+            <tr>
+                <td>Age:</td>
+                <td>19<sup>years old</sup></td>
+            </tr>
+            <tr>
+                <td>Weight:</td>
+                <td>73<sub>kg</sub></td>
+            </tr>
+            <tr>
+                <td>Height:</td>
+                <td>5<sub>feet</sub>8<sup>inches</sup></td>
+            </tr>
+            <tr>
+                <td>Hobbies:</td>
+                <td>
+                    <ol>
+                        <li>Tinkering/Fixing Gadgets</li>
+                        <li>Reading Manga/Manhwa</li>
+                        <li>Watching Anime</li>
+                        <li>Playing Online Games</li>
+                    </ol>	
+                </td>
+            </tr>
+            <tr>
+                <td><s>Schools Attended:</s></td>
+                <td>			
+                    <ul>
+                        <li>Kinder: St. Therese School </li>
+					    <li>Elementary: Cogon Elementary School</li>
+					    <li>HighSchool: University of Bohol</li>
+					    <li><ins>College: University of Bohol</ins></li>
+                    </ul>	
+                </td>
+            </tr>
+            <tfoot>
+                <tr>
+                    <td colspan="2"><del>Fill in your personal information above.</del></td>
+                </tr>
+            </tfoot>
+            </tbody>
+        </table>
+        </article>
+    </section>
+    
+    <section>
+        <article id="gallery">		
+            <h2>Gallery</h2><hr>
+            
+            <div class="nav-btns">
+                <button onclick="showCategory('images')">Images</button>
+                <button onclick="showCategory('videos')">Videos</button>
+                <button onclick="showCategory('audio')">Audio</button>
+                <button onclick="showCategory('objects')">Objects</button><br>
+            </div>
+            <div class="gallery">
+                    <!-- Image -->
+                    <div class="images">
+                    <figure>
+                        <img src="images/badminton.jpg" alt="Project 1">
+                        <figcaption>Badminton</figcaption>
+                    </figure>
+                    </div>
+        
+                    <!-- Audio -->
+                    <div class="audio">
+                    <figure>
+                        <audio controls>
+                            <source src="images/Tingin.mp3" type="audio/mpeg">
+                        </audio>
+                        <figcaption>Tingin by Cup of Joe</figcaption>
+                    </figure>
+                    </div>
+        
+                    <!-- Video -->
+                    <div class="videos">
+                    <figure>
+                        <video controls>
+                            <source src="images/project.mp4" type="video/mp4">
+                        </video>
+                        <figcaption>Video Project</figcaption>
+                    </figure>
+                    </div>
+        
+                    <!-- Embedded Object -->
+                    <div class="objects">
+                    <figure>
+                        <object data="all.wav" type="application/x-shockwave-flash" width="400" height="300">
+                            <param name="movie" value="object1.swf">
+                        </object>
+                        <figcaption>Embedded Object Project</figcaption>
+                    </figure>
+                    </div>
+                </div>
+            </article>
+                <script>
+                // JavaScript function to show only the selected category
+                function showCategory(category) {
+                    // Hide all categories
+                    document.querySelectorAll('.gallery > div').forEach(function(categoryDiv) {
+                        categoryDiv.style.display = 'none';
+                    });
+                    // Show the selected category
+                    document.querySelector('.' + category).style.display = 'block';
+                }
+            </script>
+    </section>
+
+    <section>
+        <address id = "contacts">
+            <span>
+            <p>Contact me at:<br>
+                E-mail: <a href="mailto:talaidjoshua258@gmail.com">talaidjoshua258@gmail.com</a><br>
+                Contact Number: 09193186807<br>
+                Social Media: <a href="https://www.facebook.com/joshua.talaid/">Facebook</a>
+            </p>
+            </span>
+        </address>
+    </section>
+
+    <section>
+        <dfn id = "more">Details</dfn>
+        <dl>
+            <dt>Title</dt>
+            <dd>Prelim Project</dd>
+      
+            <dt>Author</dt>
+            <dd>Joshua D. Talaid BS-CpE 1</dd>
+      
+            <dt>Published Date</dt>
+            <dd>2/24/2024</dd>
+      
+            <dt>Professor</dt>
+            <dd>Ludivina Namocatcat</dd>
+        </dl>
+    </section>
+
+</body>
+
+    <footer>
+	&copy; 2024 Joshua D. Talaid | <small>All rights reserved</small><br>
+	<hr>
+	<strong>Thank you for visiting my page!</strong>
+	</footer>
+
+</html>
